@@ -2,7 +2,7 @@
 
 ## What is Epigenetics?
 
-Epigenetics refers to chemical modifications to DNA and its associated regulatory components that can influence gene activity without altering the underlying DNA sequence. These modifications help regulate when and where genes are expressed and play important roles in development, aging, and disease.
+Epigenetics refers to chemical modifications to DNA and its associated regulatory components that has the potential to influence gene transcription depending on genomic context, without altering the underlying DNA sequence. 
 
 ![Overview of epigenetic mechanisms](figures/Epigenetic_modifications.png)
 
