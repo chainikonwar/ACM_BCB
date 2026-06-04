@@ -94,7 +94,7 @@ Several technologies are available for DNA methylation profiling; however, Illum
 
 The current standard platform is the **Illumina Infinium MethylationEPIC BeadChip Version 2 (EPIC v2)**, which interrogates approximately **1 million CpG sites** across promoters, gene bodies, enhancers, CpG islands, shores, shelves, and other regulatory regions of the genome.
 
-Following DNA extraction and bisulfite conversion, methylation levels are quantified at individual CpG sites and imported into R as **β-values (beta values)**. Beta values range from **0 to 1**, where:
+Following DNA extraction and bisulfite conversion, DNA methylation levels are quantified at individual CpG sites and imported into R as **β-values (beta values)**. Beta values range from **0 to 1**, where:
 
 - **0** = fully unmethylated
 - **1** = fully methylated
