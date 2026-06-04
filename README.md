@@ -13,3 +13,9 @@ By the end of this tutorial, participants will be able to:
 - Conduct and interpret association analyses by linking DNAm-derived biological aging metrics to health-relevant outcomes.
 - Critically evaluate clock performance across ancestrally diverse populations.
 - Engage critically with the ethical and translational frontier of the field.
+
+## Tutorial Materials
+
+### Module 1: Background Concepts
+
+- [Introduction to Epigenetic Clocks](Introduction_Epigenetic_clocks.md)
