@@ -783,7 +783,9 @@ for (i in seq_along(clocks)) {
 Cell-type PCs 1–3 account for >90% of the variance in the predicted 12 immune cell-type proportions and are used as covariates to correct for immune composition differences between surgery groups.
 
 **model:**
-$$\text{EAA}_i = \alpha + \beta1 \cdot \text{surgery}_i + \beta2 \cdot \text{Age}_i\ + \beta3 \cdot \text{Sex}_i\ + \beta4 \cdot \text{Ancestry}_i\ + \beta5 \cdot \text{cell_PC1}_i\ + \beta6 \cdot \text{cell_PC2}_i\ + \beta7 \cdot \text{cell_PC3}_i\ + \varepsilon_i$$
+```text
+EAA ~ surgery + Age + Sex + Ancestry + cell_PC1 + cell_PC2 + cell_PC3
+```
 
 <div style="background:#fdfbea; border-left:5px solid #f39c12; border-radius:0 6px 6px 0; padding:12px 16px; margin:14px 0; font-size:0.94em;">
 &#x1F4CC; Since <code>rlm()</code> downweights outliers, the R² here reflects the robust fit, a more outlier-resistant effect-size estimate than standard OLS R² in regular linear regression.
