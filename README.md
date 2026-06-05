@@ -2,7 +2,9 @@
 # How old are you really? From DNA Methylation to Biological Age
 # Chaini Konwar and Beryl Zhuang
 
-# Epigenetic Clock Workshop (Lecture-based and Hands-on Interactive)
+# Epigenetic Clock Workshop
+
+*A hands-on interactive workshop on DNA methylation biomarkers of aging*
 
 ## Tutorial Abstract
 
