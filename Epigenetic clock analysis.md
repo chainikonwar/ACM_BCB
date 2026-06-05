@@ -1,90 +1,8 @@
----
-title: "How old are you really? From DNA Methylation to Biological Age"
-subtitle: "A Hands-On Workshop"
-author: "Beryl Zhuang and Chaini Konwar"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float:
-      collapsed: false
-      smooth_scroll: true
-    theme: flatly
-    highlight: tango
-    number_sections: true
-    code_folding: show
-    fig_width: 9
-    fig_height: 6
-    css: |
-      <style>
-      /* ── Typography & base ─────────────────────────────────── */
-      body { font-family: 'Source Sans Pro', sans-serif; font-size: 15px; line-height: 1.7; color: #2c3e50; }
-      h1, h2, h3 { font-weight: 700; }
-      h1.title { font-size: 2.4em; color: #1a2e4a; }
-      h3.subtitle { color: #5d7a96; font-size: 1.3em; font-weight: 400; }
+# Module 2: Epigenetic Clock Analysis
 
-      /* ── Activity banner ───────────────────────────────────── */
-      .activity-banner {
-        background: linear-gradient(135deg, #1a3a5c 0%, #2E75B6 100%);
-        color: white; border-radius: 8px; padding: 18px 24px; margin: 28px 0 6px 0;
-      }
-      .activity-banner h1, .activity-banner h2 { color: white !important; margin: 0; }
+## How Old Are You Really? From DNA Methylation to Biological Age
 
-      /* ── Goal box ──────────────────────────────────────────── */
-      .goal-box {
-        background: #eaf4fb; border-left: 5px solid #2E75B6;
-        border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 16px 0;
-      }
-      .goal-box .goal-label {
-        font-weight: 700; color: #1a5276; text-transform: uppercase;
-        letter-spacing: 0.05em; font-size: 0.82em; margin-bottom: 4px;
-      }
-
-      /* ── Takeaway box ──────────────────────────────────────── */
-      .takeaway-box {
-        background: #eafaf1; border-left: 5px solid #27ae60;
-        border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 20px 0 6px 0;
-      }
-      .takeaway-box .takeaway-label {
-        font-weight: 700; color: #1e8449; text-transform: uppercase;
-        letter-spacing: 0.05em; font-size: 0.82em; margin-bottom: 4px;
-      }
-
-      /* ── Info / note box ───────────────────────────────────── */
-      .info-box {
-        background: #fdfbea; border-left: 5px solid #f39c12;
-        border-radius: 0 6px 6px 0; padding: 12px 16px; margin: 14px 0;
-        font-size: 0.94em;
-      }
-
-      /* ── Coverage boxes ────────────────────────────────────── */
-      .coverage-grid { display: flex; gap: 18px; flex-wrap: wrap; margin: 16px 0 24px 0; }
-      .coverage-card {
-        flex: 1; min-width: 220px; border-radius: 8px; padding: 16px 18px;
-        font-size: 0.92em;
-      }
-      .coverage-card.covered   { background: #eaf4fb; border: 1px solid #aed6f1; }
-      .coverage-card.not-covered { background: #fdf2f8; border: 1px solid #d7bde2; }
-      .coverage-card h4 { margin: 0 0 8px 0; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; }
-      .coverage-card.covered h4   { color: #1a5276; }
-      .coverage-card.not-covered h4 { color: #6c3483; }
-
-      /* ── blockquote clean-up ───────────────────────────────── */
-      blockquote { border-left: 4px solid #aed6f1; background: #f4f9fd; padding: 10px 16px; border-radius: 0 4px 4px 0; }
-      </style>
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  echo    = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  fig.align = "center",
-  comment = "#>"
-)
-```
-
+### A Hands-On Workshop
 ---
 
 <div style="background: linear-gradient(135deg, #1a3a5c 0%, #2E75B6 100%); color: white; border-radius: 10px; padding: 24px 28px; margin-bottom: 24px;">
@@ -354,7 +272,7 @@ beta_matrix <- readRDS("data/matrix_x_clock_probes_n44.rds")
 dim(beta_matrix) # 41353    44
 ```
 
-## explore data
+## Explore data
 
 ### Sample demographics
 ```{r}
