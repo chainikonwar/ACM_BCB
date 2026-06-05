@@ -315,9 +315,8 @@ ggplot(Beta_Plot, aes_string("Beta_Value", group="Sample_Name",label = "Sample_N
 <div style="background:#fdfbea; border-left:5px solid #f39c12; border-radius:0 6px 6px 0; padding:12px 16px; margin:14px 0; font-size:0.94em;">
 &#x1F4CC; Note the bimodal distribution of selected clock probes has a different pattern compared to all probes on the array.
 </div>
-```{r}
-include_graphics("data/density_all_probes.png")
-```
+
+![DNA methylation beta value density](figures/density_all_probes.png)
 
 ## Principal Component Analysis
 
