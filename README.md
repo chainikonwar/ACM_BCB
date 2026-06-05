@@ -2,7 +2,7 @@
 # How old are you really? From DNA Methylation to Biological Age
 # Chaini Konwar and Beryl Zhuang
 
-# A hands-on Epigenetic Clock Workshop
+# Epigenetic Clock Workshop (Lecture-based and Hands-on Interactive)
 
 ## Tutorial Abstract
 
@@ -20,11 +20,11 @@ By the end of this tutorial, participants will be able to:
 
 ## Tutorial Materials
 
-### Module 1: Background Concepts
+### Module 1: Background Concepts (Lecture-based)
 
 - [Introduction to Epigenetic Clocks](Introduction_Epigenetic_clocks.md)
 
-### Module 2: Epigenetic Clock Analysis
+### Module 2: Epigenetic Clock Analysis (Hands-on)
 
 - [Epigenetic Clock Analysis](Epigenetic_Clock_Analysis.md)
   
