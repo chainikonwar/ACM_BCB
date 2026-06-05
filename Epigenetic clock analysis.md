@@ -692,9 +692,7 @@ ggsave(plot = p_EAA_EAD, filename = paste0("results/EAA_EAD_vs_Age.png"), width 
 
 ```
 
-```{r}
-include_graphics("results/EAA_EAD_vs_Age.png")
-```
+![Relationship between EAA, EAD, and chronological age](figures/EAA_EAD_vs_Age.png)
 
 <div style="background:#eafaf1; border-left:5px solid #27ae60; border-radius:0 6px 6px 0; padding:14px 18px; margin:20px 0 6px 0;">
 <div style="font-weight:700; color:#1e8449; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Key Takeaways — Activity 3</div>
