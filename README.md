@@ -24,7 +24,7 @@ By the end of this tutorial, participants will be able to:
 
 ### Module 1: Background Concepts (Lecture-based)
 
-- [Introduction to Epigenetic Clocks](Introduction_Epigenetic_clocks.md)
+- [Introduction to Epigenetic Clocks](Introduction_epigenetic_clocks.md)
 
 ### Module 2: Epigenetic Clock Analysis (Hands-on)
 
