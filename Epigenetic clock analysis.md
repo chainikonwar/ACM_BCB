@@ -416,17 +416,15 @@ ggsave(plot = p_PCA_association, filename = paste0(f_out_p), width = 6, height =
 
 ```
 
-```{r}
-include_graphics("results/PCA_anova_correlation.png")
-```
+![Association of top PCs with biological variables](figures/PCA_anova_correlation.png)
+
 Association of variables and loadings of the top 6 adjusted PCs. An overall F-test was carried out for separate simple linear regression models for each combination of PCs as dependent variable and the predictor variables: cohort, sex, age, and 12 cell-type proportions. R² is indicated in each cell; variance accounted (adjusted) per PC is shown in brackets on the x-axis. P-values are Bonferroni adjusted.
 
 
 
 The same association tests using all array probes show a similar pattern:
-```{r}
-include_graphics("data/PCA_anova_correlation_all_probes.png")
-```
+
+![Association of top PCs using all EPIC array probes](figures/PCA_anova_correlation_all_probes.png)
 
 ### PCA scatter plots
 
