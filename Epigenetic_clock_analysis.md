@@ -255,8 +255,8 @@ plotClockMdAE <- function(SampleInfo, clock_i){
 
 # Activity 1: PCA of DNA Methylation Beta Values
 
-<div style="background:#eaf4fb; border-left:5px solid #2E75B6; border-radius:0 6px 6px 0; padding:14px 18px; margin:16px 0;">
-<div style="font-weight:700; color:#1a5276; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Goal</div>
+**Goal**
+
 Apply **Principal Component Analysis (PCA)** to whole blood DNA methylation beta values to identify the primary biological drivers of DNA methylation variantion, such as chronological age, sex, and estimated immune cell-type proportions.
 </div>
 
@@ -462,8 +462,7 @@ ggplot(pca_loadings, aes(x = PC3, y = Neu)) +
 
 ```
 
-<div style="background:#eafaf1; border-left:5px solid #27ae60; border-radius:0 6px 6px 0; padding:14px 18px; margin:20px 0 6px 0;">
-<div style="font-weight:700; color:#1e8449; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Key Takeaways — Activity 1</div>
+>**Key Takeaways** — Activity 1
 
 - Chronological age, sex, and cell-type composition are typically the main drivers of blood DNAm variation and associate with top PCs.
 - Understanding these drivers is essential for correctly accounting for confounding in downstream association analyses.
@@ -473,8 +472,8 @@ ggplot(pca_loadings, aes(x = PC3, y = Neu)) +
 
 # Activity 2: Calculating Epigenetic Clocks with methylCIPHER
 
-<div style="background:#eaf4fb; border-left:5px solid #2E75B6; border-radius:0 6px 6px 0; padding:14px 18px; margin:16px 0;">
-<div style="font-weight:700; color:#1a5276; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Goal</div>
+**Goal**
+
 Use the [**methylCIPHER**](https://github.com/HigginsChenLab/methylCIPHER) and [**DunedinPACE**](https://github.com/danbelsky/DunedinPACE) packages to compute a panel of established epigenetic clocks spanning first-, second-, and third-generation approaches applicable to whole blood samples.
 </div>
 
@@ -577,9 +576,7 @@ pheatmap(
 ```
 
 
-
-<div style="background:#eafaf1; border-left:5px solid #27ae60; border-radius:0 6px 6px 0; padding:14px 18px; margin:20px 0 6px 0;">
-<div style="font-weight:700; color:#1e8449; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Key Takeaways — Activity 2</div>
+> **Key Takeaways** — Activity 2
 
 - These first- and second-generation epigenetic clocks are expected to correlate with chronological age, but median absolute error (MdAE) varies across clocks.
 - However, different clocks capture different biological constructs due to their training, especially clocks trained with health-realted information.
@@ -590,8 +587,8 @@ pheatmap(
 
 # Activity 3: Computing Epigenetic Age Difference (EAD) and Epigenetic Age Acceleration (EAA)
 
-<div style="background:#eaf4fb; border-left:5px solid #2E75B6; border-radius:0 6px 6px 0; padding:14px 18px; margin:16px 0;">
-<div style="font-weight:700; color:#1a5276; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Goal</div>
+**Goal**
+
 Derive **Epigenetic Age Difference (EAD)** and **Epigenetic Age Acceleration (EAA)** from clock estimates. visualize both metrics and explore their inter-correlations to understand the differences between these two measures and make informed choice for downstream association analyses.
 </div>
 
@@ -694,8 +691,7 @@ ggsave(plot = p_EAA_EAD, filename = paste0("results/EAA_EAD_vs_Age.png"), width 
 
 ![Relationship between EAA, EAD, and chronological age](figures/EAA_EAD_vs_Age.png)
 
-<div style="background:#eafaf1; border-left:5px solid #27ae60; border-radius:0 6px 6px 0; padding:14px 18px; margin:20px 0 6px 0;">
-<div style="font-weight:700; color:#1e8449; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Key Takeaways — Activity 3</div>
+> **Key Takeaways** — Activity 3
 
 - **EAA** is mean-zero and independent of chronological age by construction. It captures individual variation in the rate of biological aging relative to other samples in the dataset. EAA is generally more appropriate 
 in most cases as it is robust to data preprocessing and array platform/version differences.
@@ -708,8 +704,8 @@ in most cases as it is robust to data preprocessing and array platform/version d
 
 # Activity 4: Association Analyses — Biological Aging and Clinical Variables
 
-<div style="background:#eaf4fb; border-left:5px solid #2E75B6; border-radius:0 6px 6px 0; padding:14px 18px; margin:16px 0;">
-<div style="font-weight:700; color:#1a5276; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;"> Goal</div>
+**Goal**
+
 Perform association analysis using **robust linear regression** to test the relationship between EAA and clinical/health-related variables. The primary exposure is **ACHD surgery status** (Fontan surgery vs. control), as studied in [Jain & Zhuang et al. 2026](https://link.springer.com/article/10.1186/s13148-026-02049-5). Model comparisons with and without age or cell-type correction.
 </div>
 
@@ -951,8 +947,7 @@ Overall, cell type compositions are typically accounted for EAA association anal
 </div>
 
 
-<div style="background:#eafaf1; border-left:5px solid #27ae60; border-radius:0 6px 6px 0; padding:14px 18px; margin:20px 0 6px 0;">
-<div style="font-weight:700; color:#1e8449; text-transform:uppercase; letter-spacing:0.05em; font-size:0.82em; margin-bottom:6px;">Key Takeaways — Activity 4</div>
+> **Key Takeaways** — Activity 4
 
 - Robust linear regression (`rlm`) is preferred over OLS in epigenetic studies due to potential outliers in small clinical cohorts.
 - **Age is a critical covariate**: in the ACHD dataset, adding Age as a covariate reveals a stronger surgery effect because age was suppressing the signal (suppressor variable).
@@ -979,6 +974,6 @@ Overall, cell type compositions are typically accounted for EAA association anal
 # Session Information
 
 ```{r session-info}
-# ── Record software versions for reproducibility ──────────────────────────────
+# Record software versions for reproducibility 
 sessionInfo()
 ```
